@@ -76,6 +76,16 @@ for i in range(100, input_data.shape[0]):
 
 x_test , y_test =np.array(x_test), np.array(y_test)
 y_predicted = model.predict(x_test)
+
+#final GRAPGH 
+st.subheader('Predictions vs Original ')
+fig2=plt.figure(figsize=(12,6))
+plt.plot(y_test,'b', label='Orginal Price')
+plt.plot(y_predicted,'r',label='predicted')
+plt.xlabel('Time')
+plt.xlabel('Price')
+plt.legend()
+st.pyplot(fig2)
 scaler=scaler.scale_
 
 scale_factor=1/0.02099517
