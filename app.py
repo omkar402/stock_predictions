@@ -1,20 +1,10 @@
-from cProfile import label
 from sklearn.preprocessing import MinMaxScaler
 import numpy as np
 import pandas as pd
-
 import matplotlib.pyplot as plt 
 import pandas_datareader as data
 from keras.models import load_model
 import streamlit as st
-from tkinter import *
-from PIL import Image,ImageTk
-
-
-
-# LBL.place(X=0,Y=0)
-
-
 
 
 
